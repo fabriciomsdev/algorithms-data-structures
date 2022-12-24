@@ -12,7 +12,7 @@ execution_times = {
 def search_by(search_type: OrderType = OrderType.GREATER, array: list = []):
     current = array[0]
     current_index = 0
-    for index in range(1, len(array)):
+    for index in range(1, len(array)):        
         if search_type == OrderType.GREATER and array[index] > current:
             current = array[index]
             current_index = index
